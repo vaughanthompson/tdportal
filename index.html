@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <base href="/" />
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Home Page - SITE: </title>
+ <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="/css/site.css" />
+	
+</head>
+<body>
+ <header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+   <div class="container">
+	<a class="navbar-brand" href="/">
+		 <img src="https://tddp-prod.azurewebsites.net/img/site/logos/Pixlbox-Logo.png" class="img-fluid" style="max-height:100px;" />
+	 Site #1
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+	 <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+	 <ul class="navbar-nav flex-grow-1">
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/">Home</a>
+		  </li>
+		 <li class="nav-item">
+			 <a class="nav-link text-dark" href="/Identity/Account/Login">Login</a>
+		</li>
+	 </ul>
+					
+
+	</div>
+	<div id="CurrentOrderDetails" style="display:none;">
+	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
+	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
+	</div>
+
+   </div>
+
+  </nav>
+
+ </header>
+ <div class="container">
+  <main role="main" class="pb-3">
+
+
+
+   <div class="d-flex" id="wrapper">
+
+
+	<!-- Page Content-->
+	<div id="page-content-wrapper">
+	 <div class="container-fluid">
+						
+    <div class="text-center">
+        <p>Dealers Portal Alpha Version 0.1 - under development.</p>
+        <p>You're currently not logged in.</p>
+        <a class="btn btn-outline-info" href="/Identity/Account/Login">Login</a>
+    </div>
+
+
+	 </div>
+	</div>
+   </div>
+
+  </main>
+ </div>
+
+ <footer class="border-top footer text-muted">
+  <div class="container">
+   &copy; 2021 - TD.Web - <a href="/Home/Privacy">Privacy</a>
+  </div>
+ </footer>
+ <script src="/lib/jquery/dist/jquery.min.js"></script>
+ <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="/js/site.js?v=eLFWsvM2q9Zzx2XEO_DDArQOUpsQ2cn25FUYjVGPSEg"></script>
+	
+
+
+</body>
+</html>
