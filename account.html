@@ -5,7 +5,7 @@
  <base href="/" />
  <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Home Page - SITE: </title>
+ <title>Account - SITE: </title>
  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
  <link rel="stylesheet" href="/css/site.css" />
  <link rel="stylesheet" href="/site1/styles.css" />	
@@ -25,11 +25,24 @@
 	<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 	 <ul class="navbar-nav flex-grow-1">
 		  <li class="nav-item">
-		   <a class="nav-link text-dark" href="/">Home</a>
+		   <strong>
+			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">
+			 Loading customer...
+			</a>
+		   </strong>
 		  </li>
-		 <li class="nav-item">
-			 <a class="nav-link text-dark" href="/Identity/Account/Login">Login</a>
-		</li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/customer/dashboard">Dashboard</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/order/search-products">Search Products</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/user/account">Account</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="#">Contact/Help</a>
+		  </li>
 	 </ul>
 					
 
@@ -51,16 +64,34 @@
 
    <div class="d-flex" id="wrapper">
 
+		<div class="bg-light border-right" id="sidebar-wrapper">
+		 <!-- Sidebar-->
+					<div class="sidebar-heading">ORDERS</div>
+		 <div class="list-group list-group-flush">
+		  <a href="/order/search-products">Create</a>
+		  <a href="/customer/orders/Draft">Drafts</a>
+		  <a href="/customer/orders/Processing">Processing</a>
+		  <a href="/customer/orders/Favourite">Favourites</a>
+		  <a href="/customer/orders/Completed">Completed</a>
+
+		 </div>
+
+		</div>
 
 	<!-- Page Content-->
 	<div id="page-content-wrapper">
 	 <div class="container-fluid">
 						
-    <div class="text-center">
-        <p>Dealers Portal Alpha Version 0.1 - under development.</p>
-        <p>You're currently not logged in.</p>
-        <a class="btn btn-outline-info" href="/Identity/Account/Login">Login</a>
-    </div>
+<h2>Account Details for <strong>vaughan@pixlbox.co.nz</strong></h2>
+
+
+        <form class="form-inline" action="/Identity/Account/Logout?returnUrl=%2F" method="post">
+            <button  type="submit" class="btn btn-sm btn-outline-dark">Logout</button>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8BKsaW-4ZbdJpoapAK6gEUip0IHBdH9AloIlehx6ZOzJL8Ry9Gw_QQckR65uS7M4I7g4enKlLjw3DzKJspKLBkNi_81Vq7X8o0U2qxN4sdtV4EnMmb8f9KMNta0GRmYpsQF-1RfsNTo39uT3NMXUk5tRcHzL8v_TnDY1ZpL5IfEfuaw-SNrFuF0U68nx38vrAQ" /></form>
+
+
+<hr />
+
 
 
 	 </div>
@@ -73,6 +104,8 @@
  <footer class="border-top footer text-muted">
   <div class="container">
    &copy; 2021 - TD.Web - <a href="/Home/Privacy">Privacy</a>
+	   <span> | </span>
+	   <a href="/admin">Admin</a>
   </div>
  </footer>
  <script src="/lib/jquery/dist/jquery.min.js"></script>
@@ -80,6 +113,11 @@
  <script src="/js/site.js?v=eLFWsvM2q9Zzx2XEO_DDArQOUpsQ2cn25FUYjVGPSEg"></script>
 	
 
+	 <script type="text/javascript">
+	  $(document).ready(function () {
+	   td_order.getCurrentOrderDetails();
+	  });
+	 </script>
 
 </body>
 </html>

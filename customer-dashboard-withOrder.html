@@ -5,7 +5,7 @@
  <base href="/" />
  <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Home Page - SITE: </title>
+ <title>Dashboard - SITE: </title>
  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
  <link rel="stylesheet" href="/css/site.css" />
  <link rel="stylesheet" href="/site1/styles.css" />	
@@ -26,7 +26,9 @@
 	 <ul class="navbar-nav flex-grow-1">
 		  <li class="nav-item">
 		   <strong>
-			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">Test Customer #1</a>
+			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">
+			 Loading customer...
+			</a>
 		   </strong>
 		  </li>
 		  <li class="nav-item">
@@ -45,9 +47,9 @@
 					
 
 	</div>
-	<div id="CurrentOrderDetails" style="">
-        <div><a id="CurrentOrderLink" href="/order/pricing/63">Current Order (<span id="CurrentOrderItemCount">8</span> items)</a></div>
-        <div>Your ref: <span id="CurrentOrderRef"></span></div>
+	<div id="CurrentOrderDetails" style="display:none;">
+	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
+	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
 	</div>
 
    </div>
@@ -80,10 +82,71 @@
 	<div id="page-content-wrapper">
 	 <div class="container-fluid">
 						
-    <div class="text-center">
-        <p>Dealers Portal Alpha Version 0.1 - under development.</p>
-        <p>You're logged in as vaughan@pixlbox.co.nz</p>
-    </div>
+<h2>Hi Vaughan (Test Customer #1)</h2>
+
+<hr />
+<h3>Current Orders</h3>
+    <p>The following orders have been submitted and are being processed.</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Date Submitted
+            </th>
+            <th>
+                Ref
+            </th>
+            <th>
+                User
+            </th>
+            <th>
+                Products
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+        <tr id="trOrder_63">
+            <td>
+                63
+            </td>
+            <td>
+                3 Jun 2021
+            </td>
+            <td>
+                n/a
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                <div style="">
+                        <div>TYREWELD PUNCTURE REPAIR/500ML - CLASS 2.1 FLAMMABLE GAS x 4</div>
+                        <div>OIL MISC x 2</div>
+                        <div>CANVAS DOO x 1</div>
+                        <div>HINGE L x 1</div>
+                </div>
+            </td>
+            <td>
+                <a href="/order/details/63">details</a>
+            </td>
+        </tr>
+</table> 
+
+
+<hr />
+<h3>Favourite Orders</h3>
+    <i>You have not created any favourite orders.</i>
+
+<hr />
+<h3>Recently Completed Orders</h3>
+    <i>You have no completed orders.</i>
+
+
 
 
 	 </div>
@@ -103,7 +166,14 @@
  <script src="/lib/jquery/dist/jquery.min.js"></script>
  <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
  <script src="/js/site.js?v=eLFWsvM2q9Zzx2XEO_DDArQOUpsQ2cn25FUYjVGPSEg"></script>
-	
+	 
+<script type="text/javascript">
+    function customerChanged() {
+        var customerID = $("#SelectedCustomer").val();
+        document.location = '/customer/dashboard/' + customerID;
+    }
+</script>
+
 
 	 <script type="text/javascript">
 	  $(document).ready(function () {

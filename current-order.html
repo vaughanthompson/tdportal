@@ -5,7 +5,7 @@
  <base href="/" />
  <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Home Page - SITE: </title>
+ <title>Price &amp; Availability - SITE: </title>
  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
  <link rel="stylesheet" href="/css/site.css" />
  <link rel="stylesheet" href="/site1/styles.css" />	
@@ -26,7 +26,9 @@
 	 <ul class="navbar-nav flex-grow-1">
 		  <li class="nav-item">
 		   <strong>
-			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">Test Customer #1</a>
+			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">
+			 Loading customer...
+			</a>
 		   </strong>
 		  </li>
 		  <li class="nav-item">
@@ -45,9 +47,9 @@
 					
 
 	</div>
-	<div id="CurrentOrderDetails" style="">
-        <div><a id="CurrentOrderLink" href="/order/pricing/63">Current Order (<span id="CurrentOrderItemCount">8</span> items)</a></div>
-        <div>Your ref: <span id="CurrentOrderRef"></span></div>
+	<div id="CurrentOrderDetails" style="display:none;">
+	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
+	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
 	</div>
 
    </div>
@@ -80,11 +82,13 @@
 	<div id="page-content-wrapper">
 	 <div class="container-fluid">
 						
-    <div class="text-center">
-        <p>Dealers Portal Alpha Version 0.1 - under development.</p>
-        <p>You're logged in as vaughan@pixlbox.co.nz</p>
-    </div>
+<h1>Price & Availability</h1>
+<p>
+    Customer: Test Customer #1
+</p>
 
+<!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUh8u9ll5Hb68OVEtFaMeank1v1lPLDSH\u002BnzckTHZGTU44JrgPLUUdcovPdbz4x6bjylAzBc/zhYumUip7rMQh4A6fat5fHyvyM2wFVKCYrQRI9aFP\u002BDvCFrkIU\u002BQ6NHSoHdqMnJGcnH1KB4FlAfj\u002Boln/E3VBzvKR6I\u002Bx4v8lZXKD6v9GuMj2J8ylcimvS849d8PwflrZQfY5bKZruQIhhSCU76XsTaVNdfzFqTkh/JZyW1JGsmF4CoXhizMhPNDOP6qIiNJ8BU2F2c78meF2D7g4BB1yRsKagJbd371jrF4969nmMccE6KxTJhspSVkjpXhDymOZRhgkIqW0\u002B8WfaPM5YeR9pPocbUdco\u002BLv63KevoybuLwBaPu2bYg/qHTkP\u002B5MtVe\u002BFjGB0LY5f8l4dmFf7Wk24fQvfS09IsovlKQ\u002BSpcVZ3iXidMbe2MoZ5OQMVtYjeB1aldYBu964YZht1jYHKWU3xkefuxmPILDGS/M/4ZHVGQLIWpOJcO0AgBH/KMmj6HmOhV\u002Bry3M9QJVCJE3oJXK/lrHw1glZImzIWDVESf5npBESnTjAxK6XXFDwZAR3Kwlkwyk1mI7Ji/idu9b5VczGZ5zxD/45t4PPTovKzOd1ezsM8jHHFfJbQXrERVni3OS1qe0MTC\u002BuMxpjwa2oOF5IBTwX0lNUzrvMJvv8iVcZua4wf0Qw33DnFvYuDgNBjkAQALf8yHG5CvC45fckf20ZtKp95y1T/8PaZ3RVJJ1ABAr/P\u002B6o7ungarGOB/jo6\u002BzSCin3nBxm0FSBIh8\u002B7xGSKhy/t1oGj/p9kaBvsrH6Pq5MKXgQmhSbjIrwe3dSoQ\u002Bg9FBsv9/6fFSBrWj72PGBaYkWgeLtxwJGC6SCXF8mmnby8UonlIEZW1v/x0pMYiP\u002BqJntnvdqSR961TQv\u002B9lVGE\u002By9tfjAdo7NiQN6c9AkPVSVf40NZx2IAgHo7mQGuWVGg6/LirKdzS/iJRAZhnB0RAxYqS8KYv9ke1ET23WCay4gk3c78u1NN7lK/tvMxYVCJ8QFpLzyBA1jvU1xmlqGPSnVbpkid9lKtOCA66zaKgOfnDdORSTNSTQUdmFYmn0j2\u002BLZEjwnpP8kD7\u002Bk\u002B28b4VEQm6gMPeg5Tp3nYpz3ZmPiSsMGo95BvBDIq1M/2n07\u002BbQV5pOpIEC82BFoHSGs0BpJBSETk0SeEoFnTYeMWlCNm20A8mnsm/OrzizmWv8siP48D0ISpmB4ABCJ2banhJnVMijyiP8S9A=="}-->
+<script src="_framework/blazor.server.js"></script>
 
 	 </div>
 	</div>
@@ -103,7 +107,9 @@
  <script src="/lib/jquery/dist/jquery.min.js"></script>
  <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
  <script src="/js/site.js?v=eLFWsvM2q9Zzx2XEO_DDArQOUpsQ2cn25FUYjVGPSEg"></script>
-	
+	 
+    
+
 
 	 <script type="text/javascript">
 	  $(document).ready(function () {

@@ -5,7 +5,7 @@
  <base href="/" />
  <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Home Page - SITE: </title>
+ <title>Search Products - SITE: </title>
  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
  <link rel="stylesheet" href="/css/site.css" />
  <link rel="stylesheet" href="/site1/styles.css" />	
@@ -26,14 +26,16 @@
 	 <ul class="navbar-nav flex-grow-1">
 		  <li class="nav-item">
 		   <strong>
-			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">Test Customer #1</a>
+			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">
+			 Loading customer...
+			</a>
 		   </strong>
 		  </li>
 		  <li class="nav-item">
 		   <a class="nav-link text-dark" href="/customer/dashboard">Dashboard</a>
 		  </li>
 		  <li class="nav-item">
-		   <a class="nav-link text-dark" href="/order/search-products">Search Products</a>
+		   <a class="nav-link text-dark" href="/order/search-products/63">Search Products</a>
 		  </li>
 		  <li class="nav-item">
 		   <a class="nav-link text-dark" href="/user/account">Account</a>
@@ -45,9 +47,9 @@
 					
 
 	</div>
-	<div id="CurrentOrderDetails" style="">
-        <div><a id="CurrentOrderLink" href="/order/pricing/63">Current Order (<span id="CurrentOrderItemCount">8</span> items)</a></div>
-        <div>Your ref: <span id="CurrentOrderRef"></span></div>
+	<div id="CurrentOrderDetails" style="display:none;">
+	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
+	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
 	</div>
 
    </div>
@@ -66,7 +68,7 @@
 		 <!-- Sidebar-->
 					<div class="sidebar-heading">ORDERS</div>
 		 <div class="list-group list-group-flush">
-		  <a href="/order/search-products">Create</a>
+		  <a href="/order/search-products/63">Create</a>
 		  <a href="/customer/orders/Draft">Drafts</a>
 		  <a href="/customer/orders/Processing">Processing</a>
 		  <a href="/customer/orders/Favourite">Favourites</a>
@@ -80,11 +82,10 @@
 	<div id="page-content-wrapper">
 	 <div class="container-fluid">
 						
-    <div class="text-center">
-        <p>Dealers Portal Alpha Version 0.1 - under development.</p>
-        <p>You're logged in as vaughan@pixlbox.co.nz</p>
-    </div>
-
+<h1>Search Products</h1>
+<p>Enter the code or name of the product you are looking for.</p>
+<!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUhhEAHXjNBsxFt2aWf1pfwtHFszBbNDXcA9NKsBPYU5jk1RpXa\u002BkSGmg/OxnIdkDVg6QwYrpLuKhcwvVRjZz671AU4UqmYCWs4NWhLE3xzMZjc7M6Mrx6qQCr\u002BjfqJ2daobI3A2WIyUMj9WC9B/ry7zQhLrO0NurYA2SUODval0oX\u002BwpkcBHrniLZdRYgFWsz/fQg7ZwJ4m6p4ngHsTJl5mcCVJCC4O/VvirokDK2hXaVpQvdcj0uzg/ZpljzzYkHjc/usFcZLqpROujY7G\u002BRjednpvK1LSFwQMQdQlQ9/Jb/xKQizniVzEs6t7YygiyBTFECMBTjz1cBZfAcPLHc48cJL0jsqmU8Va5xRuAyJLdoA9IYhYgCixdPB/9gEjBYSVvwgaPwfS0VCdudRVXm5H\u002BeBX3dG6377B47VZbl/zt15A6o8U8p8nZ6Y6CZuqzW2WAC0tHXGAokfxV59YS\u002BG6uG1KaJb1\u002BexJCg7Yvt/XPBRVFZM0cqX8e79OHVoKuTQc/nkfCqobxD\u002BvmfO1EFRzh\u002BCN9bO178MaLLg4E0ofwsRgZwoqDpEaSZwToO/JicskL3dqVg625wcqGm/k\u002Bls1BpSR17keczOz9DjNzldPU9BIbWJdCeb5VWP/fvfXoYYez9caexnf3F2XHZfxfbpYLS6goIcIkru/WrPx26NKt/7o4s9MNAsW7sqHXHjB6nHf54uEo7CIT0WQHs19y61uk2FQB9\u002B/4JYfb0MzMcYxapI/ngxeuj4q7JbkofIS2ubXuJdeeIz6AkW9q8PKX7lH2W4reMXKUUmZM1yBlXkDSx1XkARF3fwSZrY8\u002BCEz8qtqpk3Fda7G\u002BOGN/g9YaV2Wyh62JfNyoPfxV\u002BDcfyV9BwTegGeHqcMwuJBioT\u002BXFPhWA7ltzlwh3IkIfSgJaPA0OyO5c8lolnTweGstk2aZmKvB1L6mSjHPq5dp/S0CWuheIFE6nYtOd6QLBwmwEZ851rYnTuRkuUStSD1W9Rzw1PGMFNRiRKRs7Y16dhnC/IEfj7Lyiu48Kcz/\u002BVv8YAOppTyIur3hFEmqpDUcJwh0OrAR0v8j2P3WWUsbzCf89BQnafMwP164mysaltBve\u002B4VvmzfJVNWmnVuD39l/NsElKnT\u002B0mTHWLRbcBJNo17y4Myt8t29POiBs\u002B7ifH7fBtrgkNbBvkADCxnpws28IIU\u002BJ\u002BwCyOkzvkQBxfF7xVa62q4XXZLNZqfTGztwyLtd5OjU\u002B8DYzuk\u002BD6FCJ68Luozp0ohc7QBvuEIT9ja5jJ/7D0="}-->
+<script src="_framework/blazor.server.js"></script>
 
 	 </div>
 	</div>
@@ -103,7 +104,9 @@
  <script src="/lib/jquery/dist/jquery.min.js"></script>
  <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
  <script src="/js/site.js?v=eLFWsvM2q9Zzx2XEO_DDArQOUpsQ2cn25FUYjVGPSEg"></script>
-	
+	 
+    
+
 
 	 <script type="text/javascript">
 	  $(document).ready(function () {
