@@ -91,3 +91,67 @@ body {
 .validation-errors{
     color:red;
 }
+
+
+
+/* mod nav */
+
+a.navbar-brand {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+
+.logoControl {
+  padding: 1px;
+  display: block;
+  margin-right: 1em;
+}
+
+.logoCustom {
+  display: block;
+  max-width: 200px;
+}
+
+.logoCustom img {
+  display: block;
+  max-height: 70px;
+}
+.logoCustom.isSVG img {
+  height: 70px;
+}
+span.siteName {
+  padding: 0.5em 2.5em 0.5em 1.1em;
+  border-left:1px solid var(--gray);
+  border-right:1px solid  var(--gray);
+  margin-right: 0em;
+}
+
+span.siteName > span {
+  display: block;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.dName {
+  font-weight: 800;
+}
+
+header > nav.navbar {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  background-color: var(--white); /* default */
+}
+
+header > nav.navbar > div.container {
+  width:auto;
+  min-width: 100%;
+}
+
+header > nav.navbar.border-bottom {
+  border-color:#efefef  !important;
+} 
+
+

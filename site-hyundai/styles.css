@@ -1,17 +1,13 @@
 ﻿:root {
 
-    --brand1:rgba(29,56,102,1.0); /* #1d3866 */
-    --brand1-alp95:rgba(20,20,20,0.95);
-    --brand1-alp90:rgba(20,20,20,0.9);
-    --brand1-alp80:rgba(20,20,20,0.8);
-    --brand1-alp60:rgba(20,20,20,0.6);
-    --brand1-alp40:rgba(20,20,20,0.4);
-    --brand1-alp20:rgba(20,20,20,0.2);
-    --brand1-alp10:rgba(20,20,20,0.1);
-    --brand1-alp5:rgba(20,20,20,0.05);
-    
-    --brand2:rgba(244,122,32,1.0); /* #f47a20 */
-    
+  /*  --brand:rgba(0,43,95,1.0); /* #002b5f */ 
+  /*  --brandHover:rgba(0,43,95,0.5); /* #002b5f */
+  /*  --brandbg:rgba(255,255,255,1.0); /* #ffffff */
+
+/*    --brandbg:rgba(0,43,95,1.0); /* #002b5f */ 
+/*    --brandHover:rgba(255,255,255,0.5); /* #002b5f */
+/*    --brand:rgba(255,255,255,1.0); /* #ffffff */
+
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -43,17 +39,22 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  html {
-    font-family: sans-serif;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
+ 
+/* brand overrides */
+header > nav.navbar {
+    background-color: var(--brandbg); 
+}
+.navbar-light,
+.navbar-brand {
+    color: var(--brand) !important;
+}
+nav.navbar a:not(.siteName):hover {
+    color: var(--brandHover) !important;
+}
 
-
-  .logoCustom {
-      background-image: url(/site1/logo.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      display: block;
-  }
+nav.navbar a:hover .siteName {
+    color: var(--brand) !important;
+}
+nav.navbar span {
+    border-color: var(--brandHover) !important;
+}
