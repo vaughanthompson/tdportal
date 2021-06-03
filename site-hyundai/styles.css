@@ -1,9 +1,9 @@
 ﻿:root {
 
-  /*  --brand:rgba(0,43,95,1.0); /* #002b5f */ 
-  /*  --brandHover:rgba(0,43,95,0.5); /* #002b5f */
-  /*  --brandbg:rgba(255,255,255,1.0); /* #ffffff */
-
+ --brand:rgba(0,43,95,1.0); /* #002b5f */ 
+ --brandHover:rgba(0,43,95,0.5); /* #002b5f */
+ --brandbg:rgba(255,255,255,1.0); /* #ffffff */
+--topnavClr: #0366d6;
 /*    --brandbg:rgba(0,43,95,1.0); /* #002b5f */ 
 /*    --brandHover:rgba(255,255,255,0.5); /* #002b5f */
 /*    --brand:rgba(255,255,255,1.0); /* #ffffff */
@@ -39,7 +39,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
- 
+
 /* brand overrides */
 header > nav.navbar {
     background-color: var(--brandbg); 
@@ -48,13 +48,18 @@ header > nav.navbar {
 .navbar-brand {
     color: var(--brand) !important;
 }
-nav.navbar a:not(.siteName):hover {
-    color: var(--brandHover) !important;
-}
 
-nav.navbar a:hover .siteName {
-    color: var(--brand) !important;
-}
-nav.navbar span {
+header > nav.navbar span {
     border-color: var(--brandHover) !important;
+}
+header > nav.navbar a {
+    color: var(--topnavClr) !important;
+}
+header > nav.navbar a:hover {
+    text-decoration: underline;
+}
+header > nav.navbar a.navbar-brand,
+header > nav.navbar a.navbar-brand:hover {
+    color: var(--brand) !important;
+    text-decoration: none !important;
 }
