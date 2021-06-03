@@ -310,7 +310,7 @@ table.table {
 
 /* form */
 input[type=button] {
-  margin-right: 1.5em;
+  margin: 1.5em 0.5em 1.5em 0em;
 }
 .form-control {
   margin-top: 1.5em;
