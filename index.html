@@ -31,18 +31,29 @@
 	<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 	 <ul class="navbar-nav flex-grow-1">
 		  <li class="nav-item">
-		   <a class="nav-link text-dark" href="/">Home</a>
+		   <strong>
+			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">Test Customer #1</a>
+		   </strong>
 		  </li>
-		 <li class="nav-item">
-			 <a class="nav-link text-dark" href="/Identity/Account/Login">Login</a>
-		</li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/customer/dashboard">Dashboard</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/order/search-products">Search Products</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/user/account">Account</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="#">Contact/Help</a>
+		  </li>
 	 </ul>
 					
 
 	</div>
-	<div id="CurrentOrderDetails" style="display:none;">
-	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
-	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
+	<div id="CurrentOrderDetails" style="">
+        <div><a id="CurrentOrderLink" href="/order/pricing/63">Current Order (<span id="CurrentOrderItemCount">8</span> items)</a></div>
+        <div>Your ref: <span id="CurrentOrderRef"></span></div>
 	</div>
 
    </div>
@@ -57,6 +68,19 @@
 
    <div class="d-flex" id="wrapper">
 
+		<div class="bg-light border-right" id="sidebar-wrapper">
+		 <!-- Sidebar-->
+					<h3>Orders</h3>
+		 <div class="list-group list-group-flush">
+		  <a href="/order/search-products">Create</a>
+		  <a href="/customer/orders/Draft">Drafts</a>
+		  <a href="/customer/orders/Processing">Processing</a>
+		  <a href="/customer/orders/Favourite">Favourites</a>
+		  <a href="/customer/orders/Completed">Completed</a>
+
+		 </div>
+
+		</div>
 
 	<!-- Page Content-->
 	<div id="page-content-wrapper">
@@ -64,8 +88,7 @@
 						
     <div class="text-center">
         <p>Dealers Portal Alpha Version 0.1 - under development.</p>
-        <p>You're currently not logged in.</p>
-        <a class="btn btn-outline-info" href="/Identity/Account/Login">Login</a>
+        <p>You're logged in as vaughan@pixlbox.co.nz</p>
     </div>
 
 
@@ -79,6 +102,8 @@
  <footer class="border-top footer text-muted">
   <div class="container">
    &copy; 2021 - Hyundai Northern Region - <a href="/Home/Privacy">Privacy</a>
+	   <span> | </span>
+	   <a href="/admin">Admin</a>
   </div>
  </footer>
  <script src="/lib/jquery/dist/jquery.min.js"></script>
@@ -86,6 +111,11 @@
  <script src="/js/site.js?v=eLFWsvM2q9Zzx2XEO_DDArQOUpsQ2cn25FUYjVGPSEg"></script>
 	
 
+	 <script type="text/javascript">
+	  $(document).ready(function () {
+	   td_order.getCurrentOrderDetails();
+	  });
+	 </script>
 
 </body>
 </html>
