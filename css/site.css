@@ -262,6 +262,13 @@ header > nav.navbar a:hover {
   padding:1.5vw 3vw;
   flex-basis: 85%;
 }
+div.col-md-6 {
+  flex-basis: 45%;
+  max-width: 45%;
+}
+div.row {
+  justify-content: space-between;
+}
 
 table.table {
   margin-top: 2em;
