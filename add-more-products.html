@@ -8,6 +8,7 @@
  <title>Search Products - SITE: </title>
  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
  <link rel="stylesheet" href="/css/site.css" />
+ <link rel="stylesheet" href="/css/icomoon/style.css" />
  <link rel="stylesheet" href="/site-hyundai/styles.css" />	
 </head>
 <body>
@@ -16,7 +17,7 @@
    <div class="container">
 	<a class="navbar-brand" href="/">
          <span class="logoControl">
-             <span class="logoCustom isSVG"><img src="/site-hyundai/logo.svg" class="img-fluid"></span>
+             <span class="logoCustom isSVG"><img src="/site-hyundai/logoR.svg" class="img-fluid"></span>
          </span>
          <span class="siteName">
              <span class="dName">Hyundai Northern Region</span>
@@ -30,11 +31,9 @@
 	<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
 	 <ul class="navbar-nav flex-grow-1">
 		  <li class="nav-item">
-		   <strong>
-			<a id="CurrentCustomerName" class="nav-link text-dark" href="/customer/dashboard">
-			 Loading customer...
+			<a id="CurrentCustomerName" class="nav-link text-dark dName" href="/customer/dashboard">
+			 Hyundai Silverdale
 			</a>
-		   </strong>
 		  </li>
 		  <li class="nav-item">
 		   <a class="nav-link text-dark" href="/customer/dashboard">Dashboard</a>
@@ -52,10 +51,10 @@
 					
 
 	</div>
-	<div id="CurrentOrderDetails" style="display:none;">
-	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
-	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
-	</div>
+	<div id="CurrentOrderDetails" style="" class="animated infinite pulse">
+		<div><a id="CurrentOrderLink" href="/order/pricing/67"><i class="icon-cart"></i>&nbsp;&nbsp;Active Cart (<span id="CurrentOrderItemCount">1</span> items)</a></div>
+		<div>Your ref: <span id="CurrentOrderRef">n/a</span></div>
+	   </div>
 
    </div>
 
@@ -71,13 +70,13 @@
 
 		<div class="bg-light border-right" id="sidebar-wrapper">
 		 <!-- Sidebar-->
-					<div class="sidebar-heading">ORDERS</div>
+					<h3>Orders</h3>
 		 <div class="list-group list-group-flush">
-		  <a href="/order/search-products/63">Create</a>
-		  <a href="/customer/orders/Draft">Drafts</a>
-		  <a href="/customer/orders/Processing">Processing</a>
-		  <a href="/customer/orders/Favourite">Favourites</a>
-		  <a href="/customer/orders/Completed">Completed</a>
+		  <a href="/order/search-products/63"><i class="icon-cart"></i>&nbsp;&nbsp;Create New</a>
+		  <a href="/customer/orders/Draft"><i class="icon-pencil"></i>&nbsp;&nbsp;Drafts (3)</a>
+		  <a href="/customer/orders/Processing"><i class="icon-loop2"></i>&nbsp;&nbsp;Processing (1)</a>
+		  <a href="/customer/orders/Favourite"><i class="icon-heart"></i>&nbsp;&nbsp;Favourites (5)</a>
+		  <a href="/customer/orders/Completed"><i class="icon-checkbox-checked"></i>&nbsp;&nbsp;Completed</a>
 
 		 </div>
 
@@ -85,14 +84,33 @@
 
 	<!-- Page Content-->
 	<div id="page-content-wrapper">
-	 <div class="container-fluid">
+		<div class="container-fluid">
 						
-<h1>Search Products</h1>
-<p>Enter the code or name of the product you are looking for.</p>
-<!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUhhEAHXjNBsxFt2aWf1pfwtHFszBbNDXcA9NKsBPYU5jk1RpXa\u002BkSGmg/OxnIdkDVg6QwYrpLuKhcwvVRjZz671AU4UqmYCWs4NWhLE3xzMZjc7M6Mrx6qQCr\u002BjfqJ2daobI3A2WIyUMj9WC9B/ry7zQhLrO0NurYA2SUODval0oX\u002BwpkcBHrniLZdRYgFWsz/fQg7ZwJ4m6p4ngHsTJl5mcCVJCC4O/VvirokDK2hXaVpQvdcj0uzg/ZpljzzYkHjc/usFcZLqpROujY7G\u002BRjednpvK1LSFwQMQdQlQ9/Jb/xKQizniVzEs6t7YygiyBTFECMBTjz1cBZfAcPLHc48cJL0jsqmU8Va5xRuAyJLdoA9IYhYgCixdPB/9gEjBYSVvwgaPwfS0VCdudRVXm5H\u002BeBX3dG6377B47VZbl/zt15A6o8U8p8nZ6Y6CZuqzW2WAC0tHXGAokfxV59YS\u002BG6uG1KaJb1\u002BexJCg7Yvt/XPBRVFZM0cqX8e79OHVoKuTQc/nkfCqobxD\u002BvmfO1EFRzh\u002BCN9bO178MaLLg4E0ofwsRgZwoqDpEaSZwToO/JicskL3dqVg625wcqGm/k\u002Bls1BpSR17keczOz9DjNzldPU9BIbWJdCeb5VWP/fvfXoYYez9caexnf3F2XHZfxfbpYLS6goIcIkru/WrPx26NKt/7o4s9MNAsW7sqHXHjB6nHf54uEo7CIT0WQHs19y61uk2FQB9\u002B/4JYfb0MzMcYxapI/ngxeuj4q7JbkofIS2ubXuJdeeIz6AkW9q8PKX7lH2W4reMXKUUmZM1yBlXkDSx1XkARF3fwSZrY8\u002BCEz8qtqpk3Fda7G\u002BOGN/g9YaV2Wyh62JfNyoPfxV\u002BDcfyV9BwTegGeHqcMwuJBioT\u002BXFPhWA7ltzlwh3IkIfSgJaPA0OyO5c8lolnTweGstk2aZmKvB1L6mSjHPq5dp/S0CWuheIFE6nYtOd6QLBwmwEZ851rYnTuRkuUStSD1W9Rzw1PGMFNRiRKRs7Y16dhnC/IEfj7Lyiu48Kcz/\u002BVv8YAOppTyIur3hFEmqpDUcJwh0OrAR0v8j2P3WWUsbzCf89BQnafMwP164mysaltBve\u002B4VvmzfJVNWmnVuD39l/NsElKnT\u002B0mTHWLRbcBJNo17y4Myt8t29POiBs\u002B7ifH7fBtrgkNbBvkADCxnpws28IIU\u002BJ\u002BwCyOkzvkQBxfF7xVa62q4XXZLNZqfTGztwyLtd5OjU\u002B8DYzuk\u002BD6FCJ68Luozp0ohc7QBvuEIT9ja5jJ/7D0="}-->
-<script src="_framework/blazor.server.js"></script>
-
-	 </div>
+			<h1><i class="icon-search"></i>&nbsp;&nbsp;Add to your active cart</h1>
+			<p>Enter the code or name of the product you are looking for.</p>
+			<!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUgvfAS4i0\u002BsX6wCXVJPvn5tkq0cchGJLqtin1AZ/dqoST/ISkKa0wbjdTkVWJx2qk5QqlIy9TwrE40m77LxnsO\u002B55fjUfY4yEPHbd1Kfs5rZ6bifQLeguShbwfbpkVrGMes186K6JZVktpW6pIphOuYLgEGVlb5u32GCks1ey5AMqLrfoQGnLQYgF9ZL7TgVVJu8izGT\u002BF3HTMWVjD6a6lidbZUhfyKO8I/kF1Rx42t0HjiOID/gLx\u002BEaNxsF/7JYpXn1sNbGYExWO1CQU\u002B3DmEwA6q6edpYuf4YFS6tFC0tIFQ6ItF4qb6TeNsjSLQspD/0p4LAHrvylz7FZByndffr9nkHD8WSWkiF7KXY1CcpxKMFg/j1kDJdNRI1jUJaPYfUsh/jqyeyrTLPJ3RYDGZZAw\u002BRYjlgw8koetvnQHlhwLZmcW7AiDAgZ79m4xoPqOeFvZ3Cv0bXAfFoCKzyFF1kRTkPKdIUlDObHMuUkqtXVGR9tleR45Ya8PDE4aFzfcFBIipSzJEtIqfEe6KehythJ4hQDK2BTHBGJ5CKUibuhaoeebJJzgTgxNIGVdlZoB4VMOo4kg5Yk/K4n37xrjBfAt5lzZJBCE49SOiu9CuB0xObza7fax06pk4KMu\u002BHfXZ/HZMA8\u002BPekv9q1Vvkg8y\u002BVBvfz9eBncHjhoNtZQh0lX\u002BtwxxcefDTZXLtAHdjYqy0llhIaTfkqAU87d5Y81bRnZQVJKiv8btBsxl1zn03xWgh1XY/81x5XlwHIj0rZOBwDrqQ1y1ysvsND1O21W\u002BcP2LdHqlmpjTi8vw6\u002BlwARlUvyByBY9/n2qadmQ4wpmj\u002B3NW4uGiL9xaPJAc8RmfjZ/vgwN4uMHkrwADqIynr7V1JbTtI5D0pcyzUsRTMjO7NnvWXnpIgPXxJPZxSzecMZzl\u002BPG4oGAXAHWuSLOmGnrhBr314HJJa/zC1pIal2gEh\u002BuYhALdP9M\u002BmOAG\u002Bprpf25yVo3HhxjFyx7P2xgwA6o0enB\u002B159JI/BL7HPloNQbBAcVmMCFvocIUSnNehYVvz6JXK8Y28GR31b8m8ZGMba2fLWPqSVvVNj16lkrzpjq61t0NWmWpfr9LhLNx9w9ugrkR\u002B79MElLv4c\u002BSQc0XvNYaGGtOB6vOSJ3P3Lb3pEZZt4vBl9cgVDIE0Co/zTAaZC0WQKLrW9pF86gwE1pF/Sjcom2Du6a5im0XxyJGgLtD16Xp\u002BVKGGQ/XkFXyUjqP1o0p7WF\u002Bx5zGWHlAoGd6FLk6YmATHQSw1eir9zW2W8="}--><!--!--><input type="text" class="form-control" placeholder="Begin typing to search for products" _bl_daafb1b4-1608-4e7a-9575-9898dd5c1159=""><!--!-->
+			<!--!--><table class="table table-sm"><!--!--><thead><tr><th>
+									Code
+								</th>
+								<th>
+									Description
+								</th>
+								<th>
+									Category
+								</th>
+								<th>
+									Quantity
+								</th>
+								<th></th></tr></thead><tr><td>VOE11990915</td><!--!-->
+								<td>VOLVO GREEN COOLANT CONCENTRATE - 5L</td><!--!-->
+								<td>OIL, Oil Volvo</td><!--!-->
+								<td><input type="number" min="1" max="999"></td><!--!-->
+								<td><a href="javascript:void(0)">delete</a></td></tr></table><!--!--><hr>
+				<div class="row"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your ref/order number" maxlength="100"></div><!--!-->
+					<div class="col-md-8"><input type="button" class="btn btn-outline-dark" value="Create Favourite"><input type="button" class="btn btn-outline-success" value="Pricing &amp; Availability >"></div></div>
+			<script src="_framework/blazor.server.js"></script>
+			
+				 </div>
 	</div>
    </div>
 

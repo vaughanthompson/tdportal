@@ -1,16 +1,29 @@
 ﻿:root {
  /* hyundai */   
-/* #002b5f */ 
+/* #002b5f 
 --brand:rgba(0,43,95,1.0); 
---brandHover:rgba(0,43,95,0.5);
+--brandCopy:rgba(0,43,95,1.0);
+--brandAlt:rgba(0,43,95,1.0); 
+--brandHover:rgba(0,43,95,0.4);
 --brandbg:rgba(255,255,255,1.0);
 --topnavClr: #0366d6;
+*/ 
 
-/* hyundai reversed
---brandbg:rgba(0,43,95,1.0);
---brandHover:rgba(255,255,255,0.5);
+/* hyundai reversed*/
 --brand:rgba(255,255,255,1.0);
---topnavClr: rgba(100,200,255,0.9);
+--brandCopy:rgba(0,43,95,1.0);
+--brandAlt:rgba(0,43,95,1.0);
+--brandHover:rgba(255,255,255,0.5);
+--brandbg:rgba(0,43,95,1.0);
+--topnavClr: rgba(50,200,255,1.0);
+
+/*
+--brand:rgba(255,255,255,1.0);
+--brandCopy:rgba(29,56,102,1.0);
+--brandAlt:rgba(244,122,32,1.0);
+--brandHover:rgba(255,255,255,0.5);
+--brandbg:rgba(244,122,32,1.0);
+--topnavClr: rgba(29,56,102,1.0);
 */
 
 
@@ -68,4 +81,33 @@ header > nav.navbar a.navbar-brand,
 header > nav.navbar a.navbar-brand:hover {
     color: var(--brand) !important;
     text-decoration: none !important;
+}
+
+/* unlock if wanted a red alert state for in-progress order
+header > nav.navbar div#CurrentOrderDetails a {
+    color: red !important;
+}
+*/
+
+#sidebar-wrapper {
+    border-right:3px solid var(--brandAlt) !important;
+  }
+
+h1 {
+    color: var(--brandCopy);
+}
+h2 {
+    color: var(--brandAlt);
+}
+h3 {
+    color: var(--brandAlt);
+}
+h4 {
+    color: var(--brandAlt);
+}
+h5 {
+    color: var(--brandAlt);
+}
+h6 {
+    color: var(--brandAlt);
 }
