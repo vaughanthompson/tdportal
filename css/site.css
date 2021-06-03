@@ -106,7 +106,7 @@ a.navbar-brand {
 .logoControl {
   padding: 1px;
   display: block;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
 .logoCustom {
@@ -122,7 +122,7 @@ a.navbar-brand {
   height: 60px;
 }
 span.siteName {
-  padding: 0.5em 2.5em 0.5em 1.1em;
+  padding: 0.25em 1.5em 0.25em 1.5em;
   border-left:1px solid var(--gray);
   border-right:1px solid  var(--gray);
   margin-right: 0em;
@@ -131,7 +131,6 @@ span.siteName {
 span.siteName > span {
   display: block;
   text-align: left;
-  font-size: 0.8em;
   line-height: 1.4em;
 }
 
@@ -154,16 +153,15 @@ header > nav.navbar.border-bottom {
   border-color:#efefef  !important;
 } 
 
-
-
-
-
-/* topnav overrides */
-header > nav.navbar ul.navbar-nav li:first-child  {
-  border: 1px solid blue;
+header > nav.navbar .navbar-brand {
+  font-size:1em !important;
 }
-header > nav.navbar ul.navbar-nav a#CurrentCustomerName  {
-  border: 1px solid red;
-  display: block;
+
+nav.navbar {
+  font-size: 0.95em !important;
 }
+
+
+
+
 
