@@ -147,10 +147,13 @@ header > nav.navbar {
 
 /* typo */
 h1 {
-  font-size:2.2em;
-  margin-bottom: 0.5em;
+  font-size:2.4em;
+  margin-bottom: 0.3em;
 }
 
+p {
+  margin-top: 1rem;
+}
 
 
 /* page body */
