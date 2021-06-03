@@ -267,7 +267,6 @@ div.col-md-6 {
   max-width: 45%;
 }
 div.row {
-  justify-content: space-between;
 }
 
 table.table {
@@ -309,7 +308,8 @@ table.table {
 
 
 /* form */
-input[type=button] {
+input[type=button],
+input[type=submit] {
   margin: 1.5em 0.5em 1.5em 0em;
 }
 .form-control {

@@ -17,7 +17,7 @@
    <div class="container">
 	<a class="navbar-brand" href="/">
          <span class="logoControl">
-             <span class="logoCustom isSVG"><img src="/site-hyundai/logo.svg" class="img-fluid"></span>
+             <span class="logoCustom isSVG"><img src="/site-hyundai/logoR.svg" class="img-fluid"></span>
          </span>
          <span class="siteName">
              <span class="dName">Hyundai Northern Region</span>
@@ -54,9 +54,9 @@
 					
 
 	</div>
-	<div id="CurrentOrderDetails" style="display:none;">
-	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
-	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
+	<div id="CurrentOrderDetails" style="" class="animated infinite pulse">
+		<div><a id="CurrentOrderLink" href="/order/pricing/67"><i class="icon-cart"></i>&nbsp;&nbsp;Active Cart (<span id="CurrentOrderItemCount">1</span> items)</a></div>
+		<div>Your ref: <span id="CurrentOrderRef">n/a</span></div>
 	</div>
 
    </div>
@@ -73,32 +73,63 @@
 
 		<div class="bg-light border-right" id="sidebar-wrapper">
 		 <!-- Sidebar-->
-					<h3>Orders</h3>
+		 <h3>Orders</h3>
 		 <div class="list-group list-group-flush">
-		  <a href="/order/search-products">Create</a>
-		  <a href="/customer/orders/Draft">Drafts</a>
-		  <a href="/customer/orders/Processing">Processing</a>
-		  <a href="/customer/orders/Favourite">Favourites</a>
-		  <a href="/customer/orders/Completed">Completed</a>
-
+		  <a href="/order/search-products/63"><i class="icon-cart"></i>&nbsp;&nbsp;Create New</a>
+		  <a href="/customer/orders/Draft"><i class="icon-pencil"></i>&nbsp;&nbsp;Drafts (3)</a>
+		  <a href="/customer/orders/Processing"><i class="icon-loop2"></i>&nbsp;&nbsp;Processing (1)</a>
+		  <a href="/customer/orders/Favourite"><i class="icon-heart"></i>&nbsp;&nbsp;Favourites (5)</a>
+		  <a href="/customer/orders/Completed"><i class="icon-checkbox-checked"></i>&nbsp;&nbsp;Completed</a>
 		 </div>
 
 		</div>
 
 	<!-- Page Content-->
+
 	<div id="page-content-wrapper">
-	 <div class="container-fluid">
-						
-<h1>Price & Availability</h1>
-<p>
-    Customer: Test Customer #1
-</p>
+		<div class="container-fluid">
+						   
+   <h1>Price &amp; Availability</h1>
+   <p>
+	   Customer: Test Customer #1
+   </p>
+   
+   <!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUgpNgQ8/rgB1iWvnTk4sYxtbYZEMn/bddXvyMCuPU/GStVpFKz6l3FQSnKtm18z7\u002BOTO7uexdfOvuTYnlPbAd\u002BMtpI1QFpbiiUDA9MsewG51DXlA2L0BOHCKIjyAeU98spztF3nD3RLboY6hUnaEw3oAowdb5hFgvUVgOmr9a7UBQRUq9r3Bcm8PqQW2E6RePOrmzwF6nVevkL6SIuKi6B3rYfwQv4PyAiyDxO1nI0Nj424kmxAYkEzxXDw4Uvzjvk7b1s76ruBgKuqvK4hydGckFt7iYfax4nJZFx7bszZ6YQKTzrGWCqTBB6UED02jiRkxy2Z9ydrPuUkJG7Z0zIUR05NOK7CVIqJA\u002BJi0iDbRa1kei1Ov00p0z8wG2ZHLgHO2dEVSRGzaHC\u002Bsxi2sLbkdWL8dncHxIeJp8dtI60zznmjRsJBfrSnEKjgf\u002BaTgpZ7dAybRu28R94jcrXo6MDDcRxcawPLJEdxBVQC43dHJfOEBN3AQUDQK5TolW4hqCEzPyIpQiTSEuHM6cSZm7Q9\u002BbMELaMxh/DSH4yXy9AyeFDZ5RMh2FX6t/QDexPY7ZGCtDOoF8\u002BUHZC\u002BEACXjylASzUsEkQRPpNMc\u002BXMZH5bctEb\u002B6FtuXqpUAZKHmBlHXM2dzyO\u002BVffiP0wGKLFWHywL4dqzUUUTE80lXiCXko2ssgFeM\u002BZ1exf\u002BZ24kdIc73uTM1oSOb8\u002BKqCBlc1l2YfChIWh7uqKzNvsiRG/vSvb49j9QQQY/14QbGbi3IL1qXuhS3Bm9OLJcYGUquwj\u002BO5Id4Q4FPo58vuljhrfctbuMPAjGT8ZwSkk0KPraqw2t6Ac9jO1j1krt/m\u002BRIkHq30erq5emUsfNqmfNHiF917gkX92Ig2gkm5nUTXwJtNuatL\u002BM\u002B5Jj5pqKikqjQa4\u002BVzYV2YFZqyLoN2oxFsXVYlveEDDv5TdvzWuX\u002BeYil0gIbptqXHq9nl0g8sG\u002BNIfIdIqHRoQty9QFVtS5ZubEeYvosBFVcZI4k9zq\u002BOZcYAgQKLP9Z3HtOaIap7UebJDZaN6DHhVuZtzhv9jr\u002BwAgd5ge6XoSJmvJPQwxNlFuL7/Eu8pLk6IZALXAiLO3npoXE/MekHnAUW2\u002BSP2kMySDrY3zw1ShiEcsAKxOzyP0LBFh43U/fUl\u002B2vtLFohrYl/p1cMxP1gIr\u002BISPgkHrKauVsWx1C1GqEZ3Oc9DwMqZQLQMjXe0doXdu7rrZg4nFxn49MHhKSF7xytU\u002ByRTvoBtunMsQ=="}--><div style="margin-bottom:10px;"><input type="button" class="btn btn-outline-dark btn-sm" value="< add more products"></div><!--!--><div class="alert alert-success">
+			   The latest pricing and availability is loaded below. Click the Checkout button to continue.
+		   </div>
+		   <div><!--!-->
+			   TEST data, seconds to get pricing: 0.0216346<!--!--> seconds
+		   </div><!--!--><table class="table table-sm"><!--!--><thead><tr><th>
+						   Code
+					   </th>
+					   <th>
+						   Description
+					   </th>
+					   <th>
+						   Quantity
+					   </th>
+					   <th>
+						   Nth. Is. Stock
+					   </th>
+					   <th>
+						   Sth. Is. Stock
+					   </th>
+					   <th style="text-align:right;">
+						   Price
+					   </th>
+					   <th></th></tr></thead><tr><td>VOE11990915</td><!--!-->
+					   <td>VOLVO GREEN COOLANT CONCENTRATE - 5L</td><!--!-->
+					   <td><input type="number" min="1" max="999"></td><td>OutOfStock</td><!--!-->
+						   <td>OutOfStock</td><!--!-->
+						   <td style="text-align:right;">$100.64</td><!--!-->
+						   <td><a href="javascript:void(0)">delete</a></td></tr></table><!--!--><hr>
+		   <div class="row"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your ref/order number" maxlength="100"></div><!--!-->
+			   <div class="col-md-8"><input type="button" class="btn btn-outline-success" value="Checkout >"></div></div>
+   <script src="_framework/blazor.server.js"></script>
+   
+		</div>
+	   </div>
 
-<!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUh8u9ll5Hb68OVEtFaMeank1v1lPLDSH\u002BnzckTHZGTU44JrgPLUUdcovPdbz4x6bjylAzBc/zhYumUip7rMQh4A6fat5fHyvyM2wFVKCYrQRI9aFP\u002BDvCFrkIU\u002BQ6NHSoHdqMnJGcnH1KB4FlAfj\u002Boln/E3VBzvKR6I\u002Bx4v8lZXKD6v9GuMj2J8ylcimvS849d8PwflrZQfY5bKZruQIhhSCU76XsTaVNdfzFqTkh/JZyW1JGsmF4CoXhizMhPNDOP6qIiNJ8BU2F2c78meF2D7g4BB1yRsKagJbd371jrF4969nmMccE6KxTJhspSVkjpXhDymOZRhgkIqW0\u002B8WfaPM5YeR9pPocbUdco\u002BLv63KevoybuLwBaPu2bYg/qHTkP\u002B5MtVe\u002BFjGB0LY5f8l4dmFf7Wk24fQvfS09IsovlKQ\u002BSpcVZ3iXidMbe2MoZ5OQMVtYjeB1aldYBu964YZht1jYHKWU3xkefuxmPILDGS/M/4ZHVGQLIWpOJcO0AgBH/KMmj6HmOhV\u002Bry3M9QJVCJE3oJXK/lrHw1glZImzIWDVESf5npBESnTjAxK6XXFDwZAR3Kwlkwyk1mI7Ji/idu9b5VczGZ5zxD/45t4PPTovKzOd1ezsM8jHHFfJbQXrERVni3OS1qe0MTC\u002BuMxpjwa2oOF5IBTwX0lNUzrvMJvv8iVcZua4wf0Qw33DnFvYuDgNBjkAQALf8yHG5CvC45fckf20ZtKp95y1T/8PaZ3RVJJ1ABAr/P\u002B6o7ungarGOB/jo6\u002BzSCin3nBxm0FSBIh8\u002B7xGSKhy/t1oGj/p9kaBvsrH6Pq5MKXgQmhSbjIrwe3dSoQ\u002Bg9FBsv9/6fFSBrWj72PGBaYkWgeLtxwJGC6SCXF8mmnby8UonlIEZW1v/x0pMYiP\u002BqJntnvdqSR961TQv\u002B9lVGE\u002By9tfjAdo7NiQN6c9AkPVSVf40NZx2IAgHo7mQGuWVGg6/LirKdzS/iJRAZhnB0RAxYqS8KYv9ke1ET23WCay4gk3c78u1NN7lK/tvMxYVCJ8QFpLzyBA1jvU1xmlqGPSnVbpkid9lKtOCA66zaKgOfnDdORSTNSTQUdmFYmn0j2\u002BLZEjwnpP8kD7\u002Bk\u002B28b4VEQm6gMPeg5Tp3nYpz3ZmPiSsMGo95BvBDIq1M/2n07\u002BbQV5pOpIEC82BFoHSGs0BpJBSETk0SeEoFnTYeMWlCNm20A8mnsm/OrzizmWv8siP48D0ISpmB4ABCJ2banhJnVMijyiP8S9A=="}-->
-<script src="_framework/blazor.server.js"></script>
-
-	 </div>
-	</div>
    </div>
 
   </main>

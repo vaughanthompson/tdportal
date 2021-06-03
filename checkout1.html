@@ -17,7 +17,7 @@
    <div class="container">
 	<a class="navbar-brand" href="/">
          <span class="logoControl">
-             <span class="logoCustom isSVG"><img src="/site-hyundai/logo.svg" class="img-fluid"></span>
+             <span class="logoCustom isSVG"><img src="/site-hyundai/logoR.svg" class="img-fluid"></span>
          </span>
          <span class="siteName">
              <span class="dName">Hyundai Northern Region</span>
@@ -54,9 +54,9 @@
 					
 
 	</div>
-	<div id="CurrentOrderDetails" style="display:none;">
-	 <div><a id="CurrentOrderLink" href="javascript:void(0);">Current Order (<span id="CurrentOrderItemCount"></span> items)</a></div>
-	 <div>Your ref: <span id="CurrentOrderRef"></span></div>
+	<div id="CurrentOrderDetails" style="" class="animated infinite pulse">
+		<div><a id="CurrentOrderLink" href="/order/pricing/67"><i class="icon-cart"></i>&nbsp;&nbsp;Active Cart (<span id="CurrentOrderItemCount">1</span> items)</a></div>
+		<div>Your ref: <span id="CurrentOrderRef">n/a</span></div>
 	</div>
 
    </div>
@@ -73,28 +73,113 @@
 
 		<div class="bg-light border-right" id="sidebar-wrapper">
 		 <!-- Sidebar-->
-					<h3>Orders</h3>
+		 <h3>Orders</h3>
 		 <div class="list-group list-group-flush">
-		  <a href="/order/search-products">Create</a>
-		  <a href="/customer/orders/Draft">Drafts</a>
-		  <a href="/customer/orders/Processing">Processing</a>
-		  <a href="/customer/orders/Favourite">Favourites</a>
-		  <a href="/customer/orders/Completed">Completed</a>
-
+		  <a href="/order/search-products/63"><i class="icon-cart"></i>&nbsp;&nbsp;Create New</a>
+		  <a href="/customer/orders/Draft"><i class="icon-pencil"></i>&nbsp;&nbsp;Drafts (3)</a>
+		  <a href="/customer/orders/Processing"><i class="icon-loop2"></i>&nbsp;&nbsp;Processing (1)</a>
+		  <a href="/customer/orders/Favourite"><i class="icon-heart"></i>&nbsp;&nbsp;Favourites (5)</a>
+		  <a href="/customer/orders/Completed"><i class="icon-checkbox-checked"></i>&nbsp;&nbsp;Completed</a>
 		 </div>
 
 		</div>
 
 	<!-- Page Content-->
 	<div id="page-content-wrapper">
-	 <div class="container-fluid">
-						
-<h1>Review / Complete Order</h1>
-<!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUjmVBpFGCxbhbpo78sUXDRMsczD78v6FeopojAGbngrPXlqS9BlX8MZJ3DLYJMPDNu3ljxvm\u002B7zDoeu4G1L0fz/Y76wAz8/VcB9rBxiicrIQSgTBp9PKYQiHaMh/9GeYmlt5XVnjoBVwP3dobcBHj1b54WCb4PYAfLhUT2Zzf1mzqHhApIwsY2HrpAS0crq2A6V41IXn9wRhNNyEtnyW\u002BYMQ8RM1fUq1JE62j9fQgt2aDf/qTgg6Ol4nscxkug55EONBoxM9oFGILYRndznyKbj9KFY943aEMyJK83Qt6dZPyGj\u002Bbrszx3Mg\u002BUqsNiF45IxXLPKETmvgpZOzlQ7lqB\u002BwIeNg\u002BsbbnxUVg4Vx8a2LZQciUDpYopvoxDqMLDCN8J04SvtaVs18fcDSu3VmJ\u002B21uvPwGFO6LiUbQqxbqGy7AI/X\u002BV\u002BcnhtV4vHDf\u002Bu9x\u002B6iN5qL9057sJWIixnzccN6ALJ1Ka1eCPNlm319pZI4L0oHbo2I2NU0y5K7GRsBsO2TTJ/zPrKkd8iyyJjCQVe2I9uHJrBf1sj0x6/Hjr5Kd3IvIRCr7g9Z3DvPWjLl3jAc\u002B5JRY9HC2pmIzNt8ISvyYBcE1f8ZkZ69wYTuDBG1osQWG\u002BH2\u002BPB4ZHzSkqADo7nzmb8AHKtG/qFCHL4OxXe53TiEi8WGd8dDMGeO3dd8So9ZE6qwWnpZzu6wWloYtcpv6PAhZBJAKhIbNNJtxBGnGuG3RpoSgC4fnAmdgiVaLS6GB7b90\u002BtJG8ACvt8TCgAvqh2MFiKD84LfAFhUJUEw4eCkRgFOj2ClKxZgk4zRrFjIBFlPbQ8b5war6XNHZsGCWH0jt11KK7EbmulmX6rHV3eaNrle8rKqrATVXIZLzGUmxU8FEiexC9ipiE1yWncFEq4PO75R\u002BbOFXP0IU98JJtu36EQWiLocj8mzNuh5tSw2wt4W3L\u002BEe0xRa2XTe8lSrJWhonvxWRyV9NbYDRyWAdfeBC2bixw4fzSxNrcV\u002B2JdEyy4dUnwwqY2rnQUiOF8kJk1qMm36f6K7sI\u002Bi51hBdtZ8ncLOnVg8SynM031DuhxVt/veRMxm4wAHPmI1n/iMEX6i58tSIKDXn7eaW9F3Z\u002BAE6L/KbHUtvLxUQ80N5Rw7\u002B3JcU6Q8RNTtWqyZmdmxEbKeyRf\u002BPVJWunvlJS\u002B7Ho3K87bEkzSMEv19nsGNMEWTMzEf/nskOIymz2kFpDFOBMJSGfAnYgNHqo6eeTv4jQIDT/Yw7EU00ys3Gckw=="}-->
-<script src="_framework/blazor.server.js"></script>
+		<div class="container-fluid">
+						   
+   <h1>Review / Complete Order</h1>
+   <!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8BKsaW\u002B4ZbdJpoapAK6gEUiHMAJqycBONkYqU3cGXlKR9H4K\u002B8RtIGkaqwjQL4PB/HI\u002B4WJ1iAUs\u002BbHKnYip7Tgay3tRxEmIAgFy06HOLP2seQOUqICZ0zFKwCe\u002B0\u002BiDibZbo95Uks8wCrd9dHgI2boxYayjricpobYACzWlQyce79GQ0CQLC\u002BsCmIYnPK1dF50OjyaTh96\u002Bcn0KIJYlBb3wPx8jBryG6Z6BN3HQPPr53lTwGJ6aIgJhln\u002Bo9PHwA3cUR0kXWAqCfufSCj/QdMKhTf1bu1r7\u002BRFgAN0v0XU3melLHil5Hd0Dy6F8NjehxPTltP8jC1pQ7UCojWZaQ2YFszFEw9riw4wiPA2K5m/\u002BK8iaz0RsKXlwfsaKuucO71JzdGtAnklt00cYXUxuh9hSCQp\u002B5G5hSaTSCTGrbhBSEAOABBp3txLTt/LwBSaGz1uVzZHz3genYkDiPaxb8Ofk0ySQPuiYmlcXj6uPia1dZFczYteCMbDJ8XgBTmF8vm8dBn3WPnanim7GnXIP6EU3uPZLnbB/hI/cImnVxuilYLwH1NaUDCdaMQfXRRCUUdYaVZI76mRPM\u002BJt945WP\u002B\u002B0655hqRtQcN1UjOXaF396HGOJobCNEZXe0Fab4YqmDLHFp1yBxqp/pmVq4UEuh1J0xjlJMTBDbD3G/cThrr0\u002Bl\u002BM3586\u002BViSZB9UT2fKwyUtnsp5auj/Uws6SIxA4kW7GYZ2nhju/NeVQrzF6rSdLDagRUx9H9v1JXrIrux/Hy1icaUArR\u002BwX00YuQaxAd9zKEx\u002Bi/YLzly66Azv8mV8vyzTHQ\u002BolVfnCsbPPBTxjesaFiE642pldcLS\u002BSZzWj0ePhuDzKbj4rTfBaB62WFz8vzlEhefKT6bH6vTMozauPPakHQTiKqWiMtbN1O8ufnRW/AKkRMQmtuCrLpW8dLfn9mKUGYGRHkxwk0YdGstfNzusmCctiki\u002B5bn6KHN9Ews1VbKTXOe3W\u002BKl3yo5SNZhUK8Py5iHLCGenjEWT6YDi87DbTUt\u002BmB9PcUPshvwMPf7zCxi9oJVU8IP/c7hmfSvrUR/LbOTx9rPbrO7NjFXp3HUF\u002BnbBxlh2QrRjWXvHgRUOhEyc9XTIa3oOAfqii8Fwn0oVnxhh6vZAIJTeFjRURiA0LIIONV58YF3hQt8U0j21BhaaooYb3Jwk1pvHRSyD5NAIJBklwpFbtBun4HpM0XEvaOq4JzZcK5kIsKx/GTSBYzWoTJaLvc7KLcakK8qU\u002BrK13od9uBwHq13mZR16g=="}--><!--!--><h3>Your Order</h3>
+	   <div style="margin-bottom:10px;"><input type="button" class="btn btn-outline-dark btn-sm" value="< edit order"></div><!--!-->
+	   <div style=""><table class="table table-sm"><!--!--><thead><tr><th>
+						   Code
+					   </th>
+					   <th>
+						   Description
+					   </th>
+					   <th>
+						   Quantity
+					   </th>
+					   <th>
+						   Nth. Is. Stock
+					   </th>
+					   <th>
+						   Sth. Is. Stock
+					   </th>
+					   <th style="text-align:right;">
+						   Price
+					   </th>
+					   <th style="text-align:right;">
+						   Total
+					   </th></tr></thead><tr><td>VOE11990915</td><!--!-->
+					   <td>VOLVO GREEN COOLANT CONCENTRATE - 5L</td><!--!-->
+					   <td>1</td><!--!-->
+   
+					   <td>OutOfStock</td><!--!-->
+					   <td>OutOfStock</td><!--!-->
+					   <td style="text-align:right;">$100.64</td><!--!-->
+					   <td style="text-align:right;">$100.64</td></tr></table></div><!--!-->
+	   <table class="table table-sm"><tr><td style="text-align:right;padding-top:10px;"><!--!--><strong>Order total:</strong>
+				   <strong>$100.64</strong></td></tr></table><!--!--><hr>
+	   <!--!--><h3>Delivery Details</h3>
+	   <!--!--><form><!--!--><!--!--><!--!-->
+		   <!--!--><div class="row"><div class="col-md-8"><div class="form-group"><!--!--><select class="form-control valid"><!--!--><option value="">* Select delivery address</option><option value="3">
+						   
+						   78 Forfar, 
+						   
+						   CHCH, 
+						   Canterbury, 
+						   8013
+							(Rural Delivery)
+					   </option></select></div></div></div><!--!--><p>Or enter a new delivery address below:</p><div class="row"><div class="col-md-4"><div class="form-group"><input type="text" class="form-control" placeholder="First name"></div></div><!--!-->
+			   <div class="col-md-4"><div class="form-group"><input type="text" class="form-control" placeholder="Last name"></div></div></div><!--!-->
+   
+   
+		   <div class="row"><div class="col-md-8"><div class="form-group"><input type="text" class="form-control" placeholder="Phone"></div><!--!-->
+   
+				   <div class="form-group"><input type="text" class="form-control" placeholder="Building name"></div><!--!-->
+				   <div class="form-group"><input type="text" class="form-control" placeholder="Street address"></div><!--!-->
+				   <div class="form-group"><input type="text" class="form-control" placeholder="Suburb"></div><!--!-->
+				   <div class="form-group"><input type="text" class="form-control" placeholder="City / town"></div><!--!-->
+				   <div class="form-group"><!--!--><select class="form-control valid"><!--!--><option value="">Region</option>
+						   <!--!--><option value="Northland">Northland</option>
+						   <!--!--><option value="Auckland">Auckland</option>
+						   <!--!--><option value="Waikato">Waikato</option>
+						   <!--!--><option value="Bay Of Plenty">Bay Of Plenty</option>
+						   <!--!--><option value="Gisborne">Gisborne</option>
+						   <!--!--><option value="Hawke's Bay">Hawke's Bay</option>
+						   <!--!--><option value="Taranaki">Taranaki</option>
+						   <!--!--><option value="Manawatu-Wanganui">Manawatu-Wanganui</option>
+						   <!--!--><option value="Wellington">Wellington</option>
+						   <!--!--><option value="Tasman">Tasman</option>
+						   <!--!--><option value="Nelson">Nelson</option>
+						   <!--!--><option value="Marlborough">Marlborough</option>
+						   <!--!--><option value="West Coast">West Coast</option>
+						   <!--!--><option value="Canterbury">Canterbury</option>
+						   <!--!--><option value="Otago">Otago</option>
+						   <!--!--><option value="Southland">Southland</option></select></div><!--!-->
+				   <div class="form-group"><input type="text" class="form-control" placeholder="Postcode"></div><!--!-->
+				   <div class="form-group"><label class="form-check-label"><!--!--><input type="checkbox" class="form-check-inline valid">Rural address <!--!--><i>(tick the box if this address is a rural address)</i>.
+					   </label></div><!--!--><hr>
+					   <div class="form-group"><label class="form-check-label"><!--!--><input type="checkbox" class="form-check-inline valid"><!--!-->Save this address for next time
+						   </label></div><div class="form-group"><!--!--><label>
+						   Delivery notes (optional):
+					   </label>
+					   <!--!--><textarea style="width:100%;" placeholder="Enter any delivery / order notes." class="form-control valid"></textarea></div></div></div><!--!-->
+   
+		   <hr>
+   
+		   <div class="row"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your ref/order number" maxlength="100"></div><!--!-->
+			   <div class="col-md-4"><!--!--><input type="submit" class="btn btn-outline-success" value="Submit Order"></div></div></form>
+   <script src="_framework/blazor.server.js"></script>
+   
+		</div>
+	   </div>
 
-	 </div>
-	</div>
+
+
+
+
    </div>
 
   </main>
