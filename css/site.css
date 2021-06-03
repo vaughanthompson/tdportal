@@ -135,13 +135,14 @@ span.siteName > span {
 }
 
 .dName {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 header > nav.navbar {
   padding-top: 1.65em;
   padding-bottom: 1.25em;
   background-color: var(--white); /* default */
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.35);
 }
 
 header > nav.navbar > div.container {
@@ -150,7 +151,7 @@ header > nav.navbar > div.container {
 }
 
 header > nav.navbar.border-bottom {
-  border-color:#efefef  !important;
+  border-color:rgba(255,255,255,0.95)  !important;
 } 
 
 header > nav.navbar .navbar-brand {
@@ -161,6 +162,37 @@ nav.navbar {
   font-size: 0.95em !important;
 }
 
+header > nav.navbar div.navbar-collapse ul {
+  flex-wrap: wrap;
+}
+
+header > nav.navbar div.navbar-collapse ul li:first-child {
+   flex-basis: 100%;
+}
+header > nav.navbar div.navbar-collapse ul li a {
+  display: inline-block;
+}
+header > nav.navbar div.navbar-collapse ul li a,
+header > nav.navbar div#CurrentOrderDetails div {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.4em;
+}
+header > nav.navbar div#CurrentOrderDetails {
+  background-color: rgba(200,200,200,0.2);
+  padding:0.5em 1em;
+  border-radius:6px;
+  margin-right: 5px;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+header > nav.navbar a {
+  color: #0366d6 !important;
+}
+header > nav.navbar a:hover {
+  color: #0366d6 !important;
+  text-decoration: underline;
+}
 
 
 

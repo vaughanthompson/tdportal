@@ -1,12 +1,17 @@
 ﻿:root {
-
- --brand:rgba(0,43,95,1.0); /* #002b5f */ 
- --brandHover:rgba(0,43,95,0.5); /* #002b5f */
- --brandbg:rgba(255,255,255,1.0); /* #ffffff */
+ /* hyundai */   
+/* #002b5f */ 
+--brand:rgba(0,43,95,1.0); 
+--brandHover:rgba(0,43,95,0.5);
+--brandbg:rgba(255,255,255,1.0);
 --topnavClr: #0366d6;
-/*    --brandbg:rgba(0,43,95,1.0); /* #002b5f */ 
-/*    --brandHover:rgba(255,255,255,0.5); /* #002b5f */
-/*    --brand:rgba(255,255,255,1.0); /* #ffffff */
+
+/* hyundai reversed
+--brandbg:rgba(0,43,95,1.0);
+--brandHover:rgba(255,255,255,0.5);
+--brand:rgba(255,255,255,1.0);
+--topnavClr: rgba(100,200,255,0.9);
+*/
 
 
     --blue: #007bff;
@@ -56,6 +61,7 @@ header > nav.navbar a {
     color: var(--topnavClr) !important;
 }
 header > nav.navbar a:hover {
+    color: var(--topnavClr) !important;
     text-decoration: underline;
 }
 header > nav.navbar a.navbar-brand,
