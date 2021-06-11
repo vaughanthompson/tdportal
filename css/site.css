@@ -8,10 +8,12 @@ a.navbar-brand {
 }
 
 /* Provide sufficient contrast against white background */
-a {
+a, a:hover {
   color: #0366d6;
   color: var(--linkClr);
 }
+
+
 
 .btn-primary {
   color: #fff;
@@ -238,10 +240,10 @@ header > nav.navbar div#CurrentOrderDetails {
 }
 
 header > nav.navbar a {
-  color: #0366d6 !important;
+  color: var(--linkClr) !important;
 }
 header > nav.navbar a:hover {
-  color: #0366d6 !important;
+  color: var(--linkClr) !important;
   text-decoration: underline;
 }
 
