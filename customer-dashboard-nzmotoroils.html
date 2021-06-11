@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <base href="/" />
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Dashboard - SITE: </title>
+ <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="/css/site.css" />
+ <link rel="stylesheet" href="/css/icomoon/style.css" />
+ <link rel="stylesheet" href="/site-nzmotoroils/styles.css" />	
+</head>
+<body>
+ <header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-3">
+   <div class="container">
+	<a class="navbar-brand" href="/">
+         <span class="logoControl">
+             <span class="logoCustom"><img src="/site-nzmotoroils/nz-motor-oils-sml.png" class="img-fluid"></span>
+         </span>
+         <span class="siteName">
+             <span class="dName">Hyundai Northern Region</span>
+             <span class="dSubtitle">After Market Ordering</span>
+         </span>    
+     </a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+	 <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+	 <ul class="navbar-nav flex-grow-1">
+		  <li class="nav-item">
+			<a id="CurrentCustomerName" class="nav-link text-dark dName" href="/customer/dashboard">Hyundai Silverdale</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/customer/dashboard">Dashboard</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/order/search-products">Search Products</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="/user/account">Account</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="#">Contact/Help</a>
+		  </li>
+		  <li class="nav-item">
+		   <a class="nav-link text-dark" href="#">Logout</a>
+		  </li>
+	 </ul>
+					
+
+	</div>
+	<div id="CurrentOrderDetails" style="" class="animated infinite pulse">
+		<div><a id="CurrentOrderLink" href="/order/pricing/67"><i class="icon-cart"></i>&nbsp;&nbsp;Active Cart (<span id="CurrentOrderItemCount">1</span> items)</a></div>
+		<div>Your ref: <span id="CurrentOrderRef">n/a</span></div>
+	</div>
+
+   </div>
+
+  </nav>
+
+ </header>
+ <div class="container">
+  <main role="main" class="pb-3">
+
+
+
+   <div class="d-flex" id="wrapper">
+
+		<div class="bg-light border-right" id="sidebar-wrapper">
+		 <!-- Sidebar-->
+		 <h3>Orders</h3>
+		 <div class="list-group list-group-flush">
+		  <a href="/order/search-products/63"><i class="icon-cart"></i>&nbsp;&nbsp;Create New</a>
+		  <a href="/customer/orders/Draft"><i class="icon-pencil"></i>&nbsp;&nbsp;Drafts (3)</a>
+		  <a href="/customer/orders/Processing"><i class="icon-loop2"></i>&nbsp;&nbsp;Processing (1)</a>
+		  <a href="/customer/orders/Favourite"><i class="icon-heart"></i>&nbsp;&nbsp;Favourites (5)</a>
+		  <a href="/customer/orders/Completed"><i class="icon-checkbox-checked"></i>&nbsp;&nbsp;Completed</a>
+
+		 </div>
+
+		</div>
+
+	<!-- Page Content-->
+	<div id="page-content-wrapper">
+	 <div class="container-fluid">
+						
+<h1>Hi Vaughan</h1>
+
+    <p>
+        <strong>You have an active cart that is not checked out.</strong><br>
+		You can <a href="/order/search-products/63">continue with that order</a>
+        or <a href="/order/search-products">create a new order</a>
+    </p>
+
+<hr />
+<h4>Current Orders</h4>
+<i>No orders are currently processing for dispatch.</i>
+
+
+<hr />
+<h4>Favourite Orders</h4>
+<i>No favourites saved yet.</i>
+
+<hr />
+<h4>Recently Completed Orders</h4>
+<i>No completed orders recently.</i>
+
+
+
+	 </div>
+	</div>
+   </div>
+
+  </main>
+ </div>
+
+ <footer class="border-top footer text-muted">
+  <div class="container">
+   &copy; 2021 - Hyundai Northern Region - <a href="/Home/Privacy">Privacy</a>
+	   <span> | </span>
+	   <a href="/admin">Admin</a>
+  </div>
+ </footer>
+ <script src="/lib/jquery/dist/jquery.min.js"></script>
+ <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="/js/site.js?v=eLFWsvM2q9Zzx2XEO_DDArQOUpsQ2cn25FUYjVGPSEg"></script>
+	 
+<script type="text/javascript">
+    function customerChanged() {
+        var customerID = $("#SelectedCustomer").val();
+        document.location = '/customer/dashboard/' + customerID;
+    }
+</script>
+
+
+	 <script type="text/javascript">
+	  $(document).ready(function () {
+	   td_order.getCurrentOrderDetails();
+	  });
+	 </script>
+
+</body>
+</html>
