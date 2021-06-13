@@ -1,0 +1,114 @@
+﻿:root {
+ /* hyundai */   
+/* #002b5f 
+--brand:rgba(0,43,95,1.0); 
+--brandCopy:rgba(0,43,95,1.0);
+--brandAlt:rgba(0,43,95,1.0); 
+--brandHover:rgba(0,43,95,0.4);
+--brandbg:rgba(255,255,255,1.0);
+--topnavClr: #0366d6;
+*/ 
+
+/* hyundai reversed*/
+--brand: #1d5854;
+--brandCopy: #1d5854;
+--brandAlt:#6ec9c8;
+--brandHover:#6ec9c8;
+--brandbg:rgba(255,255,255,1.0);
+--topnavClr: #46adaa;
+--linkClr:#46adaa;
+
+/*
+--brand:rgba(255,255,255,1.0);
+--brandCopy:rgba(29,56,102,1.0);
+--brandAlt:rgba(244,122,32,1.0);
+--brandHover:rgba(255,255,255,0.5);
+--brandbg:rgba(244,122,32,1.0);
+--topnavClr: rgba(29,56,102,1.0);
+*/
+
+
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+
+/* brand overrides */
+header > nav.navbar {
+    background-color: var(--brandbg); 
+}
+.navbar-light,
+.navbar-brand {
+    color: var(--brand) !important;
+}
+
+header > nav.navbar span {
+    border-color: var(--brandHover) !important;
+}
+header > nav.navbar a {
+    color: var(--topnavClr) !important;
+}
+header > nav.navbar a:hover {
+    color: var(--topnavClr) !important;
+    text-decoration: underline;
+}
+header > nav.navbar a.navbar-brand,
+header > nav.navbar a.navbar-brand:hover {
+    color: var(--brand) !important;
+    text-decoration: none !important;
+}
+
+/* unlock if wanted a red alert state for in-progress order
+header > nav.navbar div#CurrentOrderDetails a {
+    color: red !important;
+}
+*/
+
+#sidebar-wrapper {
+    border-right:3px solid var(--brandAlt) !important;
+  }
+
+h1 {
+    color: var(--brandCopy);
+}
+h2 {
+    color: var(--brandAlt);
+}
+h3 {
+    color: var(--brandAlt);
+}
+h4 {
+    color: var(--brandAlt);
+}
+h5 {
+    color: var(--brandAlt);
+}
+h6 {
+    color: var(--brandAlt);
+}
