@@ -112,3 +112,9 @@ h5 {
 h6 {
     color: var(--brandAlt);
 }
+
+
+/* for custom logo length - norwood and 3rd parties */
+.logoCustom {
+    max-width: 300px;
+}
